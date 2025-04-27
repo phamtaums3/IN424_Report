@@ -1,0 +1,72 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{float}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+% Page de titre
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    \includegraphics[width=0.3\textwidth]{assets/ipsa_logo.png}
+    \vspace{1cm}
+    
+    \Huge\textbf{Rapport de Projet}\\
+    \vspace{0.5cm}
+    \LARGE Intelligent and Distributed Systems Autonomous exploration using MAS\\
+    \vspace{2cm}
+    
+    \Large\textbf{Titre du Projet}\\
+    \vspace{1cm}
+    
+    \textbf{Réalisé par :}\\
+    \vspace{0.5cm}
+    \begin{tabular}{l}
+        Étudiant 1 (Nom, Prénom) \\
+        Étudiant 2 (Nom, Prénom) \\
+        Étudiant 3 (Nom, Prénom) \\
+        Étudiant 4 (Nom, Prénom) \\
+    \end{tabular}
+    \vspace{2cm}
+    
+    \textbf{Encadrant :}\\
+    Nom de l'encadrant\\
+    \vfill
+    
+    \textbf{IPSA - Aero 4}\\
+    \today
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\input{sections/introduction.tex}
+
+\section{Présentation du Projet}
+\input{sections/presentation.tex}
+
+\section{Conception et Implémentation}
+\input{sections/realisation.tex}
+
+\section{Résultats et Analyse}
+\input{sections/results.tex}
+
+\section{Conclusion et Perspectives}
+\input{sections/conclusion.tex}
+
+\section{Annexes}
+
+% Bibliographie
+\section*{Bibliographie}
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}
